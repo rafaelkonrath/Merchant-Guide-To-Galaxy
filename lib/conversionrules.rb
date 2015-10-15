@@ -29,7 +29,7 @@ class ConversionRules < RomanToDecimal
         lv_result = output(lv_queries)
 
       else
-        lv_result = "I have no idea what you are talking about - 1"
+        lv_result = "I have no idea what you are talking about"
 
       end
     end
@@ -52,7 +52,7 @@ class ConversionRules < RomanToDecimal
             lv_text = lv_numeral.reduce{|lv_item, lv_total| lv_item += " #{lv_total}"}
                           "#{lv_text} is #{lv_value}"
             rescue Exception
-                "I have no idea what you are talking about - 2"
+                "I have no idea what you are talking about"
             end
         else
             pm_queries.sub! /^many Credits is /, ""
