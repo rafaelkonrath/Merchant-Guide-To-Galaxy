@@ -10,9 +10,6 @@
 
 require './lib/conversionrules'
 
-def teste
-    puts "rafael"
-end
 if ARGV.empty?
   puts "Usage : ruby #{__FILE__} <input.txt>"
 else
